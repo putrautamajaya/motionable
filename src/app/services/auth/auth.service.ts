@@ -10,7 +10,7 @@ export class AuthService {
 
   constructor() { 
     this.logIn = false
-    this.isAdmin = false
+    this.isAdmin = true
   }
 
   onLogIn() {
