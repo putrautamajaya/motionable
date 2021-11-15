@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AuthService } from '../app/services/auth/auth.service';
 import { AuthGuardService } from '../app/services/auth-guard/auth-guard.service';
@@ -33,7 +34,8 @@ import { ProjectBriefComponent } from './pages/project-brief/project-brief.compo
   ],
   providers: [
     AuthService,
-    AuthGuardService
+    AuthGuardService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
