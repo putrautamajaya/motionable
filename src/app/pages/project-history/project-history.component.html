@@ -19,10 +19,10 @@
         {{ project.status }}</td>
       <td>
         <button *ngIf="project.status.includes('Pending')" class="button-primary-small">
-          <img src="../../../assets/svgs/icon-edit-white.svg" alt="edit">Write Brief</button>
+          <img src="./assets/svgs/icon-edit-white.svg" alt="edit">Write Brief</button>
         <button *ngIf="project.status.includes('progress') || project.status.includes('Complete')" 
           class="button-transparent-primary-small">
-          <img src="../../../assets/svgs/icon-eye-red.svg" alt="edit">View</button>
+          <img src="./assets/svgs/icon-eye-red.svg" alt="edit">View</button>
       </td>
     </tr>
   </table>

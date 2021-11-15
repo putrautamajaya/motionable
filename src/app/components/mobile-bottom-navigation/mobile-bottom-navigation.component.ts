@@ -16,11 +16,11 @@ export class MobileBottomNavigationComponent implements OnInit {
 
   constructor(private authService: AuthService) {
     this.icons = [
-      new MIcon(true, '../../../assets/svgs/icon-home-red.svg', '../../../assets/svgs/icon-home.svg'),
-      new MIcon(false, '../../../assets/svgs/icon-video-red.svg', '../../../assets/svgs/icon-video.svg'),
-      new MIcon(false, '../../../assets/svgs/icon-add-red.svg', '../../../assets/svgs/icon-add-red.svg'),
-      new MIcon(false, '../../../assets/svgs/icon-help.svg', '../../../assets/svgs/icon-help.svg'),
-      new MIcon(false, '../../../assets/svgs/icon-settings.svg', '../../../assets/svgs/icon-settings.svg')
+      new MIcon(true, './assets/svgs/icon-home-red.svg', './assets/svgs/icon-home.svg'),
+      new MIcon(false, './assets/svgs/icon-video-red.svg', './assets/svgs/icon-video.svg'),
+      new MIcon(false, './assets/svgs/icon-add-red.svg', './assets/svgs/icon-add-red.svg'),
+      new MIcon(false, './assets/svgs/icon-help.svg', './assets/svgs/icon-help.svg'),
+      new MIcon(false, './assets/svgs/icon-settings.svg', './assets/svgs/icon-settings.svg')
     ]
 
     this.isAdmin = this.authService.isAdmin
