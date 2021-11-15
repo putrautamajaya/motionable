@@ -13,8 +13,8 @@ export class AuthService {
   constructor(private commonService: CommonService) { 
     let local = this.commonService.getLocalStorage();
 
-    this.logIn = local.logIn || false
-    this.isAdmin = local.isAdmin || true
+    this.logIn = local?.logIn || false
+    this.isAdmin = local?.isAdmin || true
   }
 
   onLogIn() {
