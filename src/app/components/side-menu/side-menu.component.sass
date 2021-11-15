@@ -1,0 +1,40 @@
+@import '../../style/common.sass'
+@import '../../style/variables.sass'
+
+.side-menu
+  display: block
+  width: 20rem
+  height: 100vh
+  position: fixed
+  left: 0
+  box-sizing: border-box
+  z-index: map-get($zIndex, '1')
+  background-color: $white
+  padding: 1rem
+  padding-top: 9rem
+
+.item
+  @include flex(row, center, flex-start)
+  padding: 1rem
+  border-radius: 1rem
+  background-color: $white
+  cursor: pointer
+  img
+    height: 1.8rem
+    width: 1.8rem
+    margin-right: 0.5rem
+  p
+    font-size: 1.6rem
+    font-weight: map-get($font-weight, 'semi-bold')
+  &:hover
+      @include brightness(0.9)
+      @include transition()
+
+.item-active
+  background-color: $pink
+  p
+    color: $red
+
+@media (max-width: map-get($break-point, 'mobile'))
+  .side-menu
+    display: none

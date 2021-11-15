@@ -1,0 +1,29 @@
+<div class="text-title">Project History</div>
+
+<div class="table-container">
+  <table>
+    <tr>
+      <th>Project Name</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let project of projects">
+      <td class="project-name">{{ project.name }}</td>
+      <td>{{ project.date }}</td>
+      <td [ngClass]="{
+        'pending': project.status.includes('Pending'),
+        'in-progress': project.status.includes('progress'),
+        'complete': project.status.includes('Complete')
+      }">
+        {{ project.status }}</td>
+      <td>
+        <button *ngIf="project.status.includes('Pending')" class="button-primary-small">
+          <img src="../../../assets/svgs/icon-edit-white.svg" alt="edit">Write Brief</button>
+        <button *ngIf="project.status.includes('progress') || project.status.includes('Complete')" 
+          class="button-transparent-primary-small">
+          <img src="../../../assets/svgs/icon-eye-red.svg" alt="edit">View</button>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+<div class="page-container login">
+  <img class="logo-motionable" src="../../../assets/svgs/logo-motionable-white.svg" alt="motionable">
+  <div class="card">
+    <div class="tab-container">
+      <div
+        class="text-login tab-login text-login-temp"
+        (click)="onTabSelect('login')">Login</div>
+      <!-- <div
+        class="text-login tab-login"
+        [ngClass]="{'text-login-active': selectedTab === 'login'}"
+        (click)="onTabSelect('login')">Login</div>
+      <div
+        class="text-login tab-sign-up"
+        [ngClass]="{'text-login-active': selectedTab === 'sign-up'}"
+        (click)="onTabSelect('sign-up')">Create new account</div> -->
+    </div>
+    <!-- <hr> -->
+
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <input type="text" placeholder="Your Email" ngModel name="email" required email>
+      <input type="password" placeholder="Your Password" ngModel name="password" required>
+      <input *ngIf="selectedTab === 'sign-up'" type="text" placeholder="Your Name">
+
+      <div *ngIf="selectedTab === 'login'" class="forgot-password">Forgot password?</div>
+      <div *ngIf="selectedTab === 'sign-up'" class="terms">By signing up, you agree to our <span>terms of service and privacy policy.</span></div>
+
+      <button class="button-primary" type="submit">{{ selectedTab === 'login' ? 'Log in' : 'Sign up' }} with Motionable</button>
+
+      <div *ngIf="selectedTab === 'login'" class="create-account">Create an account</div>
+    </form>
+  </div>
+</div>

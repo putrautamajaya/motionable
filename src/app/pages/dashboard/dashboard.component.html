@@ -1,0 +1,65 @@
+<div class="welcome">Hello, Putra Utama Jaya!</div>
+
+<div class="text-title text-overview">Overview</div>
+
+<div *ngIf="!isAdmin">
+  <div class="card home-card">
+    <img src="../../../assets/svgs/icon-add-red.svg" alt="icon-add">
+    <div class="content">
+      <p class="card-title">Create new project</p>
+      <p class="card-text">Have a new campaign in mind? Let’s create new sets of motion videos to increase sales</p>
+    </div>
+  </div>
+  
+  <div class="card home-card">
+    <img src="../../../assets/svgs/icon-add-red.svg" alt="icon-add">
+    <div class="content">
+      <p class="card-title">Previous Project</p>
+  
+      <div class="previous-project-mobile">
+        <p class="card-text project-name">#1029 Something somethi..</p>
+        <p class="card-text status">Status <span>Completed</span></p>
+      </div>
+  
+      <div class="previous-project">
+        <div class="item-1">
+          <p class="card-text sub-title">Project Name</p>
+          <p class="card-text project-name">#1029 Something somethi..</p>
+        </div>
+        <div class="item-2">
+          <p class="card-text sub-title">Status</p>
+          <p class="card-text status-success">Completed</p>
+        </div>
+        <div class="item-2">
+          <p class="card-text sub-title">Action</p>
+          <button class="button-view">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="isAdmin">
+  <div class="card home-card">
+    <img src="../../../assets/svgs/icon-add-red.svg" alt="icon-add">
+    <div class="content">
+      <p class="card-title">Start <span>2</span> paid projects</p>
+      <p class="card-text">Congratulations! You have 2 paid projects pending deliverables</p>
+    </div>
+  </div>
+  <div class="card home-card">
+    <img src="../../../assets/svgs/icon-add-red.svg" alt="icon-add">
+    <div class="content">
+      <p class="card-title"><span>5</span> projects requested revisions</p>
+      <p class="card-text">You have received 5 rounds of revisions from active projects</p>
+    </div>
+  </div>
+  <div class="card home-card">
+    <img src="../../../assets/svgs/icon-add-red.svg" alt="icon-add">
+    <div class="content">
+      <p class="card-title">Invite your team members</p>
+      <p class="card-text">You may choose their role in managing your admin panel</p>
+    </div>
+  </div>
+</div>
+

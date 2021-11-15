@@ -1,0 +1,47 @@
+@import '../../style/common.sass'
+@import '../../style/variables.sass'
+
+.top-nav
+  @include flex(row, center, space-between)
+  height: 8rem
+  padding-right: 2rem
+  position: fixed
+  top: 0
+  width: 100vw
+  box-sizing: border-box
+  z-index: map-get($zIndex, '2')
+  background-color: $white
+
+.item-container
+  @include flex(row, center, center)
+  button
+    display: block
+  .mail
+    margin-left: 1rem
+  .user-name
+    display: block
+    font-size: 1.7rem
+    margin-left: 1rem
+  .icon-user
+    display: block
+    width: 2.7rem
+    margin-left: 1rem
+
+@media (max-width: map-get($break-point, 'medium'))
+  .item-container
+    .user-name
+      display: none
+    .icon-user
+      display: none
+
+@media (max-width: map-get($break-point, 'mobile'))
+  .top-nav
+    box-shadow: $box-shadow
+    .logo
+      width: 22rem
+    .mail
+      width: 3rem
+
+  .item-container
+    button
+      display: none

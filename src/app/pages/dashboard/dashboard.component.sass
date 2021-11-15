@@ -1,0 +1,85 @@
+@import '../../style/common.sass'
+@import '../../style/variables.sass'
+  
+.welcome
+  font-size: 2.6rem
+  display: block
+
+.home-card
+  @include flex(row, flex-start, flex-start)
+  margin-top: 2rem
+  img
+    width: 3.5rem
+  .content
+    padding-left: 1rem
+    width: calc( 100% - 3.5rem )
+    box-sizing: border-box
+  .project-name
+    color: $red
+  .status
+    margin-top: 1rem
+    font-weight: map-get($font-weight, 'semi-bold')
+    span
+      color: $green
+
+.text-overview
+  display: none
+
+.previous-project-mobile
+  display: block
+
+.previous-project
+  @include flex(row, flex-start, flex-start)
+  display: none
+  .sub-title
+    font-weight: map-get($font-weight, 'semi-bold')
+    margin-bottom: 1rem
+  .item-1
+    width: 25rem
+  .item-2
+    width: 10rem
+  .project-name
+    padding-top: 0.5rem
+  .status-success
+    color: $green
+    padding-top: 0.5rem
+
+.button-view
+  font-size: 14px
+  padding: 0.5rem 1rem
+  border-sizing: border-box
+  border: none
+  border-radius: 2.6rem
+  cursor: pointer
+  background-color: $grey-6
+  color: $grey-5
+  &:hover
+    @include brightness(1.2)
+    @include transition()
+
+.card-title
+  span
+    color: $red
+
+@media (min-width: map-get($break-point, 'mobile'))
+  .text-overview
+    display: block
+
+  .welcome
+    margin-bottom: 2rem
+  
+  .previous-project-mobile
+    display: none
+
+  .previous-project
+    display: flex
+
+@media (min-width: map-get($break-point, 'medium'))
+  .welcome
+    display: none
+
+  .previous-project
+    .item-1
+      width: 35rem
+    .item-2
+      width: 20rem

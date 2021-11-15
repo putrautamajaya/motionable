@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.712" height="27.308" viewBox="0 0 26.712 27.308">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_28476" data-name="Path 28476" d="M13.356,0A13.356,13.356,0,1,1,0,13.356,13.356,13.356,0,0,1,13.356,0Z" transform="translate(1340.896 18)" fill="#ccc"/>
+    </clipPath>
+  </defs>
+  <g id="Group_27026" data-name="Group 27026" transform="translate(-1353.896 -27.692)">
+    <g id="Mask_Group_123" data-name="Mask Group 123" transform="translate(13 9.692)" clip-path="url(#clip-path)">
+      <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt" d="M10.122,11.387A5.694,5.694,0,1,0,4.428,5.694,5.695,5.695,0,0,0,10.122,11.387Zm5.061,1.265H13a6.883,6.883,0,0,1-5.765,0H5.061A5.061,5.061,0,0,0,0,17.713v.633a1.9,1.9,0,0,0,1.9,1.9H18.346a1.9,1.9,0,0,0,1.9-1.9v-.633A5.061,5.061,0,0,0,15.183,12.652Z" transform="translate(1344.13 24.469)" fill="#c9c9c9"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(1354 29)" fill="none" stroke="#c4c4c4" stroke-width="1">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="12.5" fill="none"/>
+    </g>
+  </g>
+</svg>

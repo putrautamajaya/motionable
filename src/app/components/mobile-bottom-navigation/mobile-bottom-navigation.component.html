@@ -1,0 +1,22 @@
+<div class="mobile-bot-nav">
+  <div class="item" [ngClass]="{'item-active': icons[0].is_active}" (click)="onItemClick(0)">
+    <img [src]="icons[0].is_active ? icons[0].active_url : icons[0].inactive_url">
+    <p>Home</p>
+  </div>
+  <div class="item" [ngClass]="{'item-active': icons[1].is_active}" (click)="onItemClick(1)">
+    <img [src]="icons[1].is_active ? icons[1].active_url : icons[1].inactive_url">
+    <p>Projects</p> 
+  </div>
+  <div class="item-add">
+    <img [src]="icons[2].active_url">
+    <p>Create</p>
+  </div>
+  <div class="item">
+    <img [src]="icons[3].is_active ? icons[3].active_url : icons[3].inactive_url">
+    <p>Help</p>
+  </div>
+  <div class="item">
+    <img [src]="icons[4].is_active ? icons[4].active_url : icons[4].inactive_url">
+    <p>Settings</p>
+  </div>
+</div>
