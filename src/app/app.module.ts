@@ -13,6 +13,7 @@ import { TopNavigationComponent } from './components/top-navigation/top-navigati
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { MobileBottomNavigationComponent } from './components/mobile-bottom-navigation/mobile-bottom-navigation.component';
 import { ProjectHistoryComponent } from './pages/project-history/project-history.component';
+import { ProjectBriefComponent } from './pages/project-brief/project-brief.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProjectHistoryComponent } from './pages/project-history/project-history
     TopNavigationComponent,
     SideMenuComponent,
     MobileBottomNavigationComponent,
-    ProjectHistoryComponent
+    ProjectHistoryComponent,
+    ProjectBriefComponent
   ],
   imports: [
     BrowserModule,

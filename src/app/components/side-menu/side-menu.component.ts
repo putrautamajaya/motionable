@@ -13,8 +13,8 @@ export class SideMenuComponent implements OnInit {
   
   constructor() {
     this.icons = [
-      new MIcon(true, '../../../assets/svgs/icon-home-red.svg', '../../../assets/svgs/icon-home.svg'),
-      new MIcon(false, '../../../assets/svgs/icon-video-red.svg', '../../../assets/svgs/icon-video.svg'),
+      new MIcon(false, '../../../assets/svgs/icon-home-red.svg', '../../../assets/svgs/icon-home.svg'),
+      new MIcon(true, '../../../assets/svgs/icon-video-red.svg', '../../../assets/svgs/icon-video.svg'),
       new MIcon(false, '../../../assets/svgs/icon-help.svg', '../../../assets/svgs/icon-help.svg'),
       new MIcon(false, '../../../assets/svgs/icon-settings.svg', '../../../assets/svgs/icon-settings.svg')
     ]
