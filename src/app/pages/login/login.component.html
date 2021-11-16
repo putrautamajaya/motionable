@@ -26,7 +26,12 @@
 
       <button class="button-primary" type="submit">{{ selectedTab === 'login' ? 'Log in' : 'Sign up' }} with Motionable</button>
 
-      <div *ngIf="selectedTab === 'login'" class="create-account">Create an account</div>
+      <div *ngIf="selectedTab === 'login'" class="create-account" (click)="onCreateAccount()">Create an account</div>
     </form>
+
+    <create-account
+      *ngIf="isCreateAccount" 
+      (close)="closeCreateAccount()" 
+      (submit)="closeCreateAccount()"></create-account>
   </div>
 </div>

@@ -48,6 +48,11 @@ input
   &::placeholder
     color: $grey-4
 
+.input-small
+  @extend input
+  padding: 0.5rem 2rem
+  border-radius: 2rem 
+
 .button
   @include flex($direction: row, $align: center, $justify: center)
   font-size: 16px
@@ -60,6 +65,12 @@ input
   &:hover
     @include brightness(1.2)
     @include transition()
+  &:disabled
+    @include brightness(0.8)
+    cursor: not-allowed
+
+.ng-touched.ng-invalid
+  border-color: $red
 
 .button-primary
   @extend .button
@@ -83,6 +94,9 @@ input
 .text-title
   font-size: 3rem
   font-weight: bold
+
+.modal-background
+  background-color: rgba(0, 0, 0, 0.9)
 
 @media (min-width: 420px)
   .card

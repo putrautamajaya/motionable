@@ -14,9 +14,11 @@ export class LoginComponent implements OnInit {
   @ViewChild('loginForm') loginForm: NgForm
 
   selectedTab: string
+  isCreateAccount: boolean
 
   constructor(private authService: AuthService, private route: Router) {
     this.selectedTab = 'login'
+    this.isCreateAccount = false
   }
 
   ngOnInit(): void {
@@ -33,4 +35,11 @@ export class LoginComponent implements OnInit {
     this.route.navigate(['/project-history'])
   }
 
+  onCreateAccount() {
+    this.isCreateAccount = true
+  }
+
+  closeCreateAccount() {
+    this.isCreateAccount = false
+  }
 }

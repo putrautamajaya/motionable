@@ -1,1 +1,23 @@
-<p>create-account works!</p>
+<div class="create-account">
+  <div class="card">
+    <img src="./assets/svgs/icon-close.svg" alt="close" (click)="onClose()">
+    <p class="text-title">Contact support to have an account created</p>
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
+      <div class="card-content">
+        <div class="item-1">
+          <div class="text">Name</div>
+          <div class="text">Email</div>
+          <div class="text">Subject</div>
+        </div>
+        <div class="item-2">
+          <input class="input-small" type="text" placeholder="Your Name" ngModel name="name" required>
+          <input class="input-small" type="email" placeholder="Your Email" ngModel name="email" required email>
+          <input class="input-small disabled" type="text" [ngModel]="'Account Creation'" name="subject" readonly>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="button-primary-small" type="submit" [disabled]="!f.valid">Submit request</button>
+      </div>
+    </form>
+  </div>
+</div>

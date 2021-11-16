@@ -1,0 +1,53 @@
+@import '../../style/common.sass'
+@import '../../style/variables.sass'
+
+.create-account
+  @extend .modal-background
+  @include flex(row, center, center)
+  position: fixed
+  height: 100vh
+  width: 100vw
+  padding: 2rem
+  top: 0
+  left: 0
+  z-index: map-get($zIndex, '3')
+  box-sizing: border-box
+  .card
+    padding: 4rem 2rem
+    box-sizing: border-box
+    position: relative
+    img
+      position: absolute
+      width: 3rem
+      top: 1rem
+      right: 1rem
+      cursor: pointer
+    .text-title
+      font-size: 1.8rem
+      font-weight: bold
+      margin-bottom: 2rem
+    .text
+      font-size: 1.6rem
+      line-height: 3.08rem
+      margin-bottom: 1rem
+    .disabled
+      color: #000
+      background-color: $grey-8
+    input
+      margin-bottom: 1rem
+    .card-content
+      @include flex(row, flex-start, flex-start)
+      z-index: map-get($zIndex, '4')
+      width: 100%
+      .item-1
+        flex: 1
+      .item-2
+        flex: 3
+    .button-container
+      @include flex(row, flex-end, flex-end)
+
+@media (min-width: map-get($break-point, 'mobile'))
+  .card
+    max-width: 70rem
+
+
