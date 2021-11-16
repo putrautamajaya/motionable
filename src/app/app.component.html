@@ -2,7 +2,9 @@
   <top-navigation *ngIf="!onLoginPage"></top-navigation>
   <side-menu *ngIf="!onLoginPage"></side-menu>
   <div [ngClass]="{'content-container': !onLoginPage}">
-    <router-outlet></router-outlet>
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
   </div>
   <mobile-bottom-navigation *ngIf="!onLoginPage"></mobile-bottom-navigation>
 </div>

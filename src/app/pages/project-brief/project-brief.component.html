@@ -1,1 +1,18 @@
-<p>project-brief works!</p>
+<div class="project-brief">
+  <p class="text-title">Project Brief</p>
+  <p class="text-subtitle">Set project name (Optional)</p>
+
+  <input type="text" placeholder="Your project name" ngModel name="project_name">
+
+  <div class="button-container">
+    <button type="submit" class="button-primary">Let's start</button>
+  </div>
+
+  <div class="progress-bar-container">
+    <p class="step">{{ step }} / 5 Completed</p>
+    <div class="step-progress-bar">
+      <div *ngFor="let item of progressBar.active" class="item active"></div>
+      <div *ngFor="let item of progressBar.inactive" class="item inactive"></div>
+    </div>
+  </div>
+</div>

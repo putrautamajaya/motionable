@@ -1,0 +1,36 @@
+@import '../../style/common.sass'
+@import '../../style/variables.sass'
+
+.text-title
+  margin-bottom: 3rem
+
+.text-subtitle
+  margin-bottom: 2rem
+
+input
+  border-radius: 0
+  margin-bottom: 2rem
+
+.button-container
+  @include flex(row, flex-end, flex-end)
+
+.step
+  color: $grey-4
+  font-size: 1.3rem
+  margin-bottom: 1rem
+
+.progress-bar-container
+  margin-top: 3rem
+
+.step-progress-bar
+  @include flex(row, flex-start, flex-start)
+  .item
+    flex: 1
+  .active
+    height: 5px
+    border: none
+    background-color: $red
+  .inactive
+    height: 5px
+    border: none
+    background-color: $grey

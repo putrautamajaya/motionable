@@ -56,6 +56,7 @@ input
 .button
   @include flex($direction: row, $align: center, $justify: center)
   font-size: 16px
+  font-weight: map-get($font-weight, 'semi-bold')
   padding: 1.5rem
   border-sizing: border-box
   color: $white
@@ -94,6 +95,10 @@ input
 .text-title
   font-size: 3rem
   font-weight: bold
+
+.text-subtitle
+  font-size: 1.8rem
+  font-weight: map-get($font-weight, 'semi-bold')
 
 .modal-background
   background-color: rgba(0, 0, 0, 0.9)
