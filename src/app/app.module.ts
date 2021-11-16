@@ -15,6 +15,8 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { MobileBottomNavigationComponent } from './components/mobile-bottom-navigation/mobile-bottom-navigation.component';
 import { ProjectHistoryComponent } from './pages/project-history/project-history.component';
 import { ProjectBriefComponent } from './pages/project-brief/project-brief.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { CreateAccountComponent } from './components/create-account/create-account.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProjectBriefComponent } from './pages/project-brief/project-brief.compo
     SideMenuComponent,
     MobileBottomNavigationComponent,
     ProjectHistoryComponent,
-    ProjectBriefComponent
+    ProjectBriefComponent,
+    ModalComponent,
+    CreateAccountComponent
   ],
   imports: [
     BrowserModule,
